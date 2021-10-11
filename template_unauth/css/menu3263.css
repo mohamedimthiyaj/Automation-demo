@@ -1,0 +1,722 @@
+/*******************************
+        NAVBAR
+*******************************/
+#topnav{
+    background-color: #212121;
+}
+ul#menu-tools-mobile > li > a {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+ul#menu-tools-mobile li.dropped > ul {
+    overflow-x: hidden;
+}
+#menu-tools-mobile li {
+    float: none;
+}
+@media (min-width: 1250px) {
+    #topnav .navigation-menu > li.nav-item:last-of-type > a {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1249px) {
+    .nav-item-tools {
+        display: none !important;
+    }
+
+    .nav-account-dropdown {
+        display: none !important;
+    }
+
+    .nav-account-dropdown.dropped {
+        display: block !important;
+        position: absolute;
+        z-index: 2000;
+    }
+
+    .nav-account-dropdown.dropped > li {
+        display: block;
+        float: none;
+    }
+
+    #topnav .navigation-menu > li.nav-item:last-of-type > a {
+        padding: 10px 20px;
+    }
+}
+
+/* ############################## */
+/* End mobile menu tools dropdown */
+/* ############################## */
+/* to fix the header */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.menu-item{
+    position: 20%;
+}
+.container.container-menu {
+    max-width: 1400px;
+}
+
+.topnav-left {
+    display: block;
+    float: left;
+}
+
+#topnav a {
+    text-decoration: none;
+    transition: all 0s;
+}
+#topnav a:hover,
+#topnav a:active {
+    text-decoration: none;
+}
+
+#topnav i {
+    margin-right: 5px;
+}
+
+#topnav i.icon-dropdown {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+#topnav i.icon-dropright {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+#topnav .navigation-menu {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* primary menu design */
+#topnav .navigation-menu > li {
+    float: left;
+    display: block;
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#topnav .navigation-menu > li > a,
+.nav-dropdown > a {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/* logo styles */
+#topnav .logo {
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 0px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.logo-img {
+    display: none !important;
+    height: 40px;
+    width: 150px; /* IE11 stretches it for no reason, if no width is set */
+}
+
+.logo-img-mobile {
+    display: none !important;
+    height: 40px;
+    width: 37px; /* IE11 stretches it for no reason, if no width is set */
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+div.btn-login {
+    height: 30px;
+    display: inline;
+    line-height: 30px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 5px;
+}
+
+#topnav .menu-extras {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+#topnav .navbar-toggle {
+    border: 0;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+#topnav .navbar-toggle .lines {
+    width: 25px;
+    display: block;
+    position: relative;
+    margin: 28px auto;
+    height: 15px;
+}
+
+#topnav .navbar-toggle span {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+#topnav .navbar-toggle span:last-child {
+    margin-bottom: 0;
+}
+
+#topnav .navbar-toggle.open span {
+    position: absolute;
+}
+
+#topnav .navbar-toggle.open span:first-child {
+    top: 6px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#topnav .navbar-toggle.open span:nth-child(2) {
+    visibility: hidden;
+}
+
+#topnav .navbar-toggle.open span:last-child {
+    width: 100%;
+    top: 6px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#topnav .navbar-toggle:hover,
+#topnav .navbar-toggle:focus,
+#topnav .navigation-menu > li > a:hover,
+#topnav .navigation-menu > li > a:focus {
+    background-color: transparent;
+}
+
+#nav-tools,
+#nav-account {
+    cursor: default;
+    user-select: none;
+}
+
+.navigation-menu a.link-alltools > i {
+    color: #0099ff !important;
+}
+
+.nav-dropdown {
+    margin-top: 0px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.darkheader {
+    background-color: #212121 !important;
+    -moz-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1) !important;
+}
+
+.darkheader .navigation-menu > li > a,
+.darkheader .logo {
+    color: #fff !important;
+}
+/* This fixes a small visual issue with menu dropdowns, that became visible with the orange trial banner */
+.supermenu,
+.custom-dropdown {
+    margin-top: -1px;
+}
+
+@media (min-width: 1250px) {
+    .desktop-menu-invisible {
+        display: none !important;
+    }
+
+    #topnav .navigation-menu > li.about-desktop {
+        display: block;
+    }
+
+    #topnav .navigation-menu > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 50px;
+        vertical-align: middle;
+    }
+    #topnav .navigation-menu > li.last-elements .submenu {
+        left: auto;
+        right: 0;
+    }
+    #topnav .navigation-menu > li.last-elements .submenu > li.has-submenu .submenu {
+        left: auto;
+        right: 100%;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    #topnav .navigation-menu > li .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        padding: 10px 0;
+        list-style: none;
+        min-width: 180px;
+        visibility: hidden;
+        opacity: 0;
+        margin-top: 10px;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        /*background-color: #ffffff;*/
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+    }
+    #topnav .navbar-toggle {
+        display: none;
+    }
+    #topnav #navigation {
+        float: right;
+        display: inline-block !important;
+    }
+    #topnav.scroll-active .navigation-menu > li > a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #topnav.scroll .navigation-menu > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #topnav.scroll {
+        top: 0;
+    }
+
+    #topnav .navigation-menu > li .submenu li a:hover,
+    #topnav .navigation-menu .has-submenu .submenu > li:hover > a,
+    #topnav .navigation-menu > li:hover > a,
+    #topnav .navigation-menu > li:focus > a,
+    #topnav .navigation-menu > li > ul a:hover {
+        color: #0099ff !important;
+    }
+    #topnav .navigation-menu > li:hover > .menu-arrow {
+        border-color: #0099ff;
+    }
+    #topnav .navigation-menu > li:hover,
+    #topnav .navigation-menu > li:focus {
+        outline: none;
+    }
+}
+
+@media (max-width: 1249px) {
+
+    .mobile-menu-invisible {
+        display: none !important;
+    }
+    .custom-dropdown {
+        right: 0;
+    }
+
+    #topnav .navigation-menu > li.about-mobile {
+        display: block;
+    }
+    .logo-img {
+        margin-top: 10px;
+    }
+    .menu-arrow {
+        top: 15px;
+        right: 20px;
+    }
+    .submenu-arrow {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        position: absolute;
+        right: 20px;
+        top: 12px;
+    }
+    .logo {
+        padding: 0 !important;
+        line-height: 0;
+    }
+    .darkheader .logo {
+        color: #fff !important;
+    }
+    #topnav .container {
+        width: auto;
+    }
+    #topnav .navigation-menu {
+        float: none;
+    }
+    #topnav .navigation-menu > li {
+        float: none;
+    }
+    #topnav .navigation-menu > li > a {
+        /*color: #28282e;*/
+        padding: 10px 20px;
+    }
+    #topnav .navigation-menu > li > a:after {
+        position: absolute;
+        right: 15px;
+    }
+    #topnav .navigation-menu > li .submenu {
+        display: none;
+        list-style: none;
+        padding-left: 20px;
+        margin: 0;
+    }
+    #topnav .navigation-menu > li .submenu li a {
+        display: block;
+        padding: 6px 15px;
+        clear: both;
+        white-space: nowrap;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        transition: all 0.3s;
+    }
+    #topnav .navigation-menu > li .submenu.open {
+        display: block;
+    }
+    #topnav .navigation-menu > li .submenu .submenu {
+        display: none;
+        list-style: none;
+    }
+    #topnav .navigation-menu > li .submenu .submenu.open {
+        display: block;
+    }
+    #topnav .navigation-menu > li .submenu.megamenu > li > ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    #topnav .navbar-header {
+        float: left;
+    }
+    #topnav .logo {
+        padding: 11px 0;
+    }
+    #topnav .logo .logo-light {
+        display: none;
+    }
+    #topnav .logo .logo-dark {
+        display: block;
+    }
+    #navigation {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        display: none;
+        height: auto;
+        padding-bottom: 0;
+        overflow: visible;
+    }
+    #navigation.open {
+        display: block;
+        overflow-y: visible;
+    }
+    #topnav .navigation-menu > li > a,
+    .nav-dropdown > a {
+        text-align: end;
+    }
+
+    #topnav .navigation-menu {
+        background-color: #212121;
+    }
+
+    #topnav .navigation-menu > li > a:hover{ 
+        background-color: #0099ff;
+        color: #fff;
+    } 
+
+    #topnav .has-submenu.active .submenu li.active > a,
+    #navigation li.active a,
+    .text-custom {
+        color: #0099ff;
+    }
+
+    #topnav .has-submenu.active .submenu li.active > a:hover,
+    #navigation li.active a:hover,
+    #topnav .has-submenu.active .submenu li.active > a:focus,
+    #navigation li.active a:focus,
+    #topnav .has-submenu.active .submenu li.active > a:active,
+    #navigation li.active a:active {
+        color: #fff !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo-img {
+        display: inline !important;
+    }
+    #topnav .navigation-menu > li.has-submenu:hover > .submenu {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0;
+    }
+    #topnav .navigation-menu > li.has-submenu:hover > .submenu > li.has-submenu:hover > .submenu {
+        visibility: visible;
+        opacity: 1;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-img-mobile {
+        display: inline !important;
+    }
+}
+
+/* Media queries */
+@media (min-width: 992px) {
+    .desktop-invisible {
+        display: none !important;
+    }
+}
+
+/* Media queries */
+@media (max-width: 991px) {
+    .banner-trial {
+        display: none;
+    }
+    .mobile-invisible {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container.container-menu {
+        max-width: 100%;
+    }
+}
+
+/* ###############################
+ * Tiny screen fixes (Iphone SE) #
+ * ############################### */
+
+@media (max-width: 382px) {
+    .label-credits-unlimited {
+        display: none;
+    }
+}
+
+@media (max-width: 349px) {
+    .home-center .home-desc-center {
+        padding-top: 100px;
+    }
+    
+    .logo-img-mobile {
+        height: 50px;
+        width: 50px;
+        margin-top: 4px;
+        margin-left: 2px;
+    }
+    #topnav .navbar-toggle .lines {
+        margin: 22px auto;
+    }
+}
+
+/* Navbar visual tweaks and improvements */
+
+/* Navbar - mobile */
+#topnav .navigation-menu > li {
+    margin: 0;
+}
+
+ul#menu-tools-mobile > li > a#nav-tools-mobile {
+    padding-left: 5px;
+}
+
+ul#menu-tools-mobile > li a:hover {
+    color: #0099ff !important;
+} */
+
+/* ul#menu-tools-mobile > li > ul.tool-categories {
+    left: -180px;
+    right: -30px;
+    overflow-y: auto;
+}*/
+
+ul#menu-tools-mobile > li > ul.tool-categories ul {
+    margin-left: -4px;
+    margin-right: -4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+ul#menu-tools-mobile > li > ul.tool-categories li a {
+    width: 100%;
+    position: relative;
+}
+
+ul#menu-tools-mobile > li > ul.tool-categories li a.link-alltools > i {
+    color: #fff !important;
+}
+
+ul#menu-tools-mobile > li > ul.tool-categories li a.link-alltools:hover > i {
+    color: #0099ff !important;
+}
+/* Navbar - Scrollbar */
+#topnav ::-webkit-scrollbar {
+    width: 5px !important;
+    background-color: #CCC;
+}
+
+#topnav ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: #343940;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+#topnav ::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    border: none;
+    background-color: #52525A;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+/* Navbar - Burger icon */
+#topnav .navbar-toggle {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+#topnav.topnav-logged-in .navbar-toggle {
+    margin-right: 12px;
+}
+.burger-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-icon .line {
+    width: 24px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    border-radius: 1px;
+    background: #FFF;
+    -webkit-transition: -webkit-transform cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+            transition: transform cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+
+.navbar-toggle:hover .burger-icon .line {
+    background: #0099ff;
+}
+
+.burger-icon .line.top {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+}
+
+.burger-icon .line.bottom {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+}
+
+.navbar-toggle.open .burger-icon .line.top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+.navbar-toggle.open .burger-icon .line.middle {
+    -webkit-transform: rotate(45deg) ;
+            transform: rotate(45deg) ;
+}
+
+.navbar-toggle.open .burger-icon .line.bottom {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+/* Navbar - Media queries */
+@media (min-width: 1250px) {
+    #topnav .navbar-toggle {
+        display: none;
+    }
+
+    #topnav.topnav-logged-in #navigation .navigation-menu a#nav-account {
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 1249px) {
+    #topnav {
+        min-height: 72px;
+    }
+
+    #topnav.topnav-logged-in .menu-resources {
+        display: block !important;
+        background-color: #343A40;
+    }
+
+    #topnav .navigation-menu .menu-resources ul {
+        z-index: 2010;
+    }
+
+    #topnav .navigation-menu .menu-resources ul li:hover a {
+        color: #0099ff !important;
+    }
+    .main-navigation li.dropped li,
+    .main-navigation li.dropped li {
+        float: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #topnav.topnav-logged-in #navigation .navigation-menu > li .submenu li a:hover,
+    #topnav.topnav-logged-in #navigation .navigation-menu .has-submenu .submenu > li:hover > a,
+    #topnav.topnav-logged-in #navigation .navigation-menu > li:hover > a,
+    #topnav.topnav-logged-in #navigation .navigation-menu > li:focus > a {
+        color: #FFF !important;
+    }
+}
+
+@media (max-width: 349px) {
+    .logo-img-mobile {
+        height: 50px;
+        width: 50px;
+        margin-top: 6px;
+    }
+
+    #topnav .navbar-toggle .lines {
+        margin: 28px auto;
+    }
+}

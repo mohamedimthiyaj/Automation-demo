@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Lato', sans-serif;
+}
+body{
+	background: #18191A;
+  overflow: hidden;
+}
+nav{
+  position: relative;
+  top: 26px;
+  right: 380px;
+  transform: translate(-50%, -50%);
+}
+
+nav .drop-btn{
+  width: 140px;
+  background: #212121 ;
+  border-radius: 5px;
+  line-height: 55px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 20px;
+}
+.caret-size{
+  position: relative;
+  top: 3px;
+  font-size: 25px;
+}
+
+.Pro{
+  font-weight: 900;
+  font-size: 15px;
+  color:#fff;
+  border-radius: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  background-color:#0099ff;
+}
+
+nav .drop-btn #span{
+  float: right;
+  position: relative;
+  bottom: 26px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.drop-btn:hover{
+  color: #0099ff;
+}
+/* #mySharedown{
+  display: none;
+} */
+nav .tooltip{
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  height: 15px;
+  width: 15px;
+  background:#242526;
+  transform: rotate(45deg);
+  display: none;
+}
+nav .tooltip.show{
+  display: block;
+}
+nav .wrapper{
+  position: absolute;
+  top: 43px;
+  right: 8px;
+  display: flex;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #242526;
+  display: none;
+  transition: all 0.3s ease;
+}
+nav .wrapper.show{
+  display: block;
+  display: flex;
+}
+.wrapper #ul{
+  width: 400px;
+  list-style: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.wrapper #ul #li{
+  line-height: 55px;
+}
+
+.wrapper #ul #li #anchor{
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+.wrapper #ul #li:hover #anchor{
+  background: #0099ff;
+}
+#ul #li #anchor .icon{
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background: #ffffff1a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+#ul #li #anchor .icon #span{
+  line-height: 40px;
+  font-size: 20px;
+  color: #fff;
+}
+#ul #li #anchor #icon_i{
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+}
+.wrapper #ul.info-drop,
+.wrapper #ul.webapp-drop,
+.wrapper #ul.cms-drop,
+.wrapper #ul.Infra-drop,
+.wrapper #ul.exploit-drop{
+  display: none;
+} 
+.wrapper .arrow{
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper .arrow #span{
+  margin-right: 15px;
+}
+@media screen and (max-width:1249px){
+	.desktop{
+		position: relative;
+    left: 1%;
+	}	
+  nav .drop-btn{
+    width: 140px;
+    background: #212121 ;
+    border-radius: 5px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width:600px){
+    nav .wrapper{
+      position: absolute;
+      top: 43px;
+      right: 8px;
+      display: flex;
+      width: 250px;
+      overflow: hidden;
+      border-radius: 5px;
+      background: #242526;
+      display: none;
+      transition: all 0.3s ease;
+    }
+    .wrapper #ul #li #anchor{
+      position: relative;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 0 10px;
+      display: flex;
+      border-radius: 8px;
+      align-items: center;
+      text-decoration: none;
+    }
+    #ul #li #anchor #icon_i{
+      position: absolute;
+      left: 90%;
+      font-size: 12px;
+      pointer-events: none;
+    }
+    #ul #li #anchor .icon{
+      height: 30px;
+      width: 30px;
+      margin-right: 13px;
+      background: #ffffff1a;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      border-radius: 50%;
+    }
+    #ul #li #anchor .icon #span{
+      line-height: 30px;
+      font-size: 12px;
+      color: #fff;
+    }
+    .wrapper .arrow{
+      /* padding-left: 10px; */
+      font-size: 15px;
+      font-weight: 500;
+      color: #fff;
+      cursor: pointer;
+    }
+    .mobile_info{
+      position: relative;
+      left: 150px;
+    }
+
+    
+}
+
+/* particle effect on background */
+
+
+
+

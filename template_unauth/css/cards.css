@@ -1,0 +1,100 @@
+.My_Container{
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 2500px;
+  margin: 40px 0;
+}
+.My_Container .My_card{
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+              inset 5px 5px 15px rgba(255, 255, 255, 0.1),
+              5px 5px 15px rgba(0, 0, 0, 3),
+              -5px -5px 15px rgba(255, 255, 255, 0.1); 
+  border-radius: 15px;
+  margin: 30px;             
+}
+.My_Container .My_card .Box{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border: 2px solid #1e1f23;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  overflow: hidden;
+}
+.My_Container .My_card .Box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+
+}
+.My_Container .My_card .Box:hover{
+  transform: translateY(-50px);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+.My_Container .My_card .Box .My_content{
+  padding: 20px; 
+  text-align: center;
+}
+.My_Container .My_card .Box .My_content .My_heading{
+  font-size: 1.8em;
+  color:rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+}
+.My_Container .My_card .Box .My_content .My_para{
+  font-size: 1em;
+  color:rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+}
+.My_Container .My_card .Box .My_content .My_anchor{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #000;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.5s;
+  background-color:#0099ff ;
+}
+.My_Container .My_card .Box .My_content .My_anchor:hover{
+  color: #0099ff;
+  background-color: #fff
+}
+
+.My_span{
+  position: relative;
+  top: 70px;
+  color: #fff;
+  font-size: 30px;
+}
+.My_icon{
+  color: #0099ff;
+}
+#invsible{
+    text-indent: -9999px;                 /* sends the text off-screen */
+    white-space: nowrap;   
+}
+

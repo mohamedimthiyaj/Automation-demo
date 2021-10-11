@@ -1,0 +1,131 @@
+.log_action{
+    position:fixed;
+    top:5px;
+    right:6.8%;
+}
+.log_action .log_profile{
+  position:relative;
+  color: #fff;
+  font-size: 30px;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.log_action .log_profile img{
+  background-color: grey;
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  object-fit:cover;
+}
+.log_action .log_profile .log-icon{
+  border-radius: 50%;
+  background-color: rgb(93, 96, 99);
+}
+.log_action .log_profile:hover{
+    color: #0099ff;
+}
+.log_action .log_menu{
+  position:absolute;
+  top:120px;
+  right:-10px;
+  padding:10px 20px;
+  background: #212121 ;
+  width:300px;
+  box-sizing: 0 5px 25px rgba(0,0,0,.1);
+  border-radius:15px;
+  transition:.5s;
+  visibility:hidden;
+  opacity:0;
+}
+.log_action .log_menu.active{
+  top:80px;
+  visibility:visible;
+  opacity:1;
+}
+.log_action .log_menu::before{
+  content:'';
+  position:absolute;
+  top:-5px;
+  right:28px;
+  width:20px;
+  height:20px;
+  background: #212121;
+  transform: rotate(45deg);
+}
+.log_action .log_menu #log_h3{
+  width:100%;
+  text-align:center;
+  font-size: 18px;
+  padding:20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color:#fff;
+  line-height: 1.2em;
+}
+.log_action .log_menu #log_h3 #log_span{
+  font-size: 14px;
+  color:#fff;
+  font-weight: 400;
+}
+.log_action .log_menu #log_ul #log_li{
+  list-style:none;
+  padding:10px 0;
+  border-top:1px solid rgba(0,0,0,0.05);
+  display:flex;
+  align-items:center;
+  text-align: center;
+  
+}
+.log_action .log_menu #log_ul{
+  padding-left: 60px;
+}
+.log_action .log_menu #log_ul #log_li #log_i{
+  font-size: 26px;
+  width:32px;
+  margin-right: 10px;
+  opacity:.6;
+  transition:.5s;
+  color: #fff;
+  text-align: center;
+}
+.log_action .log_menu #log_ul #log_li:hover #log_i{
+  opacity:1;
+  color: #0099ff;
+}
+.log_action .log_menu #log_ul #log_li #log_a{
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  font-weight: 500;
+  transition:.5s;
+  text-align: center;
+}
+.log_action .log_menu #log_ul #log_li:hover #log_a{
+  color:#0099ff
+}
+@media screen and (max-width:1249px) {
+  .log_action{
+    position:fixed;
+    top:15px;
+    right:50px;
+  } 
+}
+@media screen and (min-width:1600px) {
+  .log_action{
+    right:10%;
+}
+}
+@media screen and (min-width:1800px) {
+  .log_action{
+    right:15%;
+}
+}
+@media screen and (min-width:2500px) {
+  .log_action{
+    right:25%;
+}
+}
